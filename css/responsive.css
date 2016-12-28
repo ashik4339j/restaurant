@@ -1,0 +1,37 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo {
+      text-align: center;
+    }
+    .header-text h2 {
+      font-size: 50px;
+      padding-top: 40px;
+    }
+    .reservation-form-content {
+        margin-top: 50px;
+    }
+    .reservation-form label {
+        display: block;
+    }
+    .reservation-form button {
+        margin-left: 230px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

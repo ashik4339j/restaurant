@@ -1,0 +1,425 @@
+/* ==========================================================================
+    General Styles
+========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-family: 'Yeseva One', cursive;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 24px;
+}
+
+.button {
+    color: #FFFFFF;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, .5);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.button:hover {
+    background: #D9BB61;
+    color: #000000;
+    border: 1px solid #D9BB61;
+}
+
+.button-white {
+    border: 1px solid #FFFFFF;
+    background: rgba(255, 255, 255, .2)
+}
+
+.section-padding {
+    padding: 70px 0px;
+}
+
+.section-title {
+    color: #CC9900;
+    font-size: 35px;
+    background: url(img/title-yellow.png) no-repeat center bottom;
+    padding-bottom: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.section-title.title-white-img {
+    background: url(img/title-white.png) no-repeat center bottom;
+}
+
+.section-title.title-white-color {
+    color: #FFFFFF
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*********************************************************
+    Top Area
+*********************************************************/
+
+#top-area {
+    position: relative;
+}
+
+.top-area-bg {
+    background: url(img/header-bg.jpg) no-repeat center /cover;
+}
+
+.mainmenu {
+    position: relative;
+    padding-right: 50px;
+}
+
+.mainmenu ul.nav.navbar-nav {
+    text-align: right;
+    float: none;
+    font-size: 20px;
+}
+
+.mainmenu ul.nav.navbar-nav li {
+    float: none;
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu ul.nav.navbar-nav li a {
+    color: #FFFFFF;
+    padding: 40px 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.mainmenu ul.nav.navbar-nav li a:hover, .mainmenu ul.nav.navbar-nav li a:focus {
+    background: none;
+}
+
+.mainmenu ul.nav.navbar-nav li.active::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background: #C9C6BB;
+}
+
+.logo img {
+    height: 92px;
+}
+
+.header-area {
+    z-index: 9999 !important;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.header-text {
+    padding: 100px 0px;
+}
+
+.header-text h2 {
+    background: url(img/line-symble.png) no-repeat center bottom;
+    font-size: 70px;
+    color: #FFFFFF;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+}
+
+.social-icon {
+    position: absolute;
+    top: 35px;
+    right: 0px;
+}
+
+.social-icon a {
+    font-size: 20px;
+    color: #DAB33E;
+    padding-left: 5px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.social-icon a:hover {
+    color: #FFF;
+}
+
+.header-area, .mainmenu ul.nav.navbar-nav li a, .logo img, .social-icon {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.is-sticky .logo img {
+    height: 70px;
+    width: auto;
+    padding: 10px 0px;
+}
+
+.is-sticky .mainmenu ul.nav.navbar-nav li a {
+    padding: 25px 15px;
+}
+
+.is-sticky .social-icon {
+    top: 24px;
+}
+
+
+/*********************************************************
+    About Area
+*********************************************************/
+
+#about-area {
+    background: url(img/about-bg.png);
+}
+
+.about-text {
+    margin-top: 30px;
+}
+
+.about-text img {
+    margin-top: 50px;
+}
+
+
+/*********************************************************
+    Igredient Area
+*********************************************************/
+
+#igredient-area {
+    position: relative;
+}
+
+.igredient-bg {
+    background: url(img/igredient-bg.jpg) no-repeat center /cover fixed;
+}
+
+.igredient-content {
+    padding: 50px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.igredient-content p {
+    color: #FFFFFF;
+}
+
+.igredient-content img {
+    margin-top: 50px;
+}
+
+
+/*********************************************************
+    Menu Area
+*********************************************************/
+
+#menu-area {
+    background: url(img/menu-area-bg.png);
+}
+
+.menu-chart {
+    margin-bottom: 60px;
+}
+
+.menu-item h3 {
+    color: #cc9933;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #cc9933;
+    padding-bottom: 10px;
+}
+
+.menu-item h3 span {
+    float: right;
+}
+
+.menu-item {
+    margin-bottom: 40px;
+}
+
+.special-menu {
+    position: relative;
+    border: 1px solid #CC9900;
+    width: 105%;
+    margin-left: -12px;
+    padding: 10px;
+}
+
+.special-menu::before {
+    position: absolute;
+    content: "special";
+    color: #FFFFFF;
+    background: #D6B864;
+    right: -1px;
+    top: -25px;
+    padding: 0px 15px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+
+/*********************************************************
+    Reviews Area
+*********************************************************/
+
+#reviews {
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews-bg {
+    background: url(img/reviews-bg.jpg) no-repeat center /cover fixed;
+}
+
+.reviews-content {
+    position: relative;
+    color: #FFFFFF;
+    padding: 60px;
+    background: rgba(0, 0, 0, .6);
+}
+
+.reviews-content::before {
+    position: absolute;
+    content: "\f10d";
+    font-family: FontAwesome;
+    top: 36%;
+    left: 25px;
+    color: #9B9C99;
+    font-size: 30px;
+}
+
+.reviews-content p {
+    font-size: 20px;
+    font-family: 'Gentium Book Basic', serif;
+    line-height: 36px;
+}
+
+.reviews-content h3 {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+
+/*********************************************************
+    Contact Area
+*********************************************************/
+
+#reservation {
+    background: url(img/about-bg.png);
+}
+
+#reservation p {
+    text-align: center;
+}
+
+.reservation-form {
+    margin-top: 29px;
+}
+
+.reservation-form input, select {
+    border: 1px solid #C9A131;
+    padding: 5px 10px;
+    color: #666666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.reservation-form label {
+    color: #C9A131;
+    text-align: left;
+}
+
+.reservation-form select {
+    padding: 7px 37px;
+    color: #666666;
+}
+
+.reservation-form option {}
+
+.reservation-form button {
+    background: #C9A131;
+    border: none;
+    color: #FFFFFF;
+    padding: 8px 55px;
+    display: block;
+    margin: 0 auto;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.reservation-form button:hover {
+    background: #191919;
+    color: #FFFFFF;
+}
+
+
+/*********************************************************
+    Footer Area
+*********************************************************/
+
+#footer-area h2 {
+    font-size: 20px;
+}
+
+#footer-area {
+    background: #191919;
+    color: #FFFFFF;
+}
+
+.footer-icon {
+    margin-top: 30px;
+}
+
+.footer-icon a i {
+    color: #FFFFFF;
+    padding: 5px;
+    display: inline-block;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.footer-icon a i:hover {
+    color: #C9A131;
+    transform: scale(1.5);
+}
